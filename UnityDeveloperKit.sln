@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.ALTY.UnityDeveloperKit", "com.ALTY.UnityDeveloperKit.csproj", "{d009cad7-0a21-652a-d850-e1222c52e33c}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALTY_UnityDeveloperKit_Tests", "ALTY_UnityDeveloperKit_Tests.csproj", "{664ac320-4042-8d7d-0d2a-14dbac0d0ac1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{d009cad7-0a21-652a-d850-e1222c52e33c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d009cad7-0a21-652a-d850-e1222c52e33c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664ac320-4042-8d7d-0d2a-14dbac0d0ac1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664ac320-4042-8d7d-0d2a-14dbac0d0ac1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
