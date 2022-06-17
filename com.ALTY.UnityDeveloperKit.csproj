@@ -43,6 +43,7 @@
   <ItemGroup>
      <Compile Include="Assets\DeveloperKit\Runtime\Api\Api.cs" />
      <Compile Include="Assets\DeveloperKit\Runtime\Extension\ApiExtension.cs" />
+     <Compile Include="Assets\DeveloperKit\Runtime\BinaryFormater\BinaryMaper.cs" />
      <None Include="Assets\DeveloperKit\Runtime\UnityDeveloperKit.Runtime.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>D:\UnityEditor\2021.3.2f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
