@@ -43,7 +43,7 @@
   <ItemGroup>
      <Compile Include="Assets\DeveloperKit\Tests\TestIObject.cs" />
      <Compile Include="Assets\DeveloperKit\Tests\TopDesk.cs" />
-     <None Include="Assets\DeveloperKit\Tests\Unity.DeveloperKit.Tests.asmdef" />
+     <None Include="Assets\DeveloperKit\Tests\UnityDeveloperKit.Tests.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>D:\UnityEditor\2021.3.2f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
