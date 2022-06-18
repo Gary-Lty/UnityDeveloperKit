@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DeveloperKit.Runtime.Pool;
 using Sirenix.OdinInspector;
 using UnityDeveloperKit.Runtime.Api;
+using UnityDeveloperKit.Runtime.Extension;
 using UnityEngine;
 
 namespace UnityDeveloperKit.Tests
@@ -30,6 +31,8 @@ namespace UnityDeveloperKit.Tests
         public DeskPool deskPool = new DeskPool();
 
         public List<GameObject> poolObjs;
+        private IDesk item;
+
         [Button]
         public void Pop()
         {
@@ -40,6 +43,27 @@ namespace UnityDeveloperKit.Tests
             {
                 poolObjs.Add(desk.gameObject);
             }
+        }
+
+        [Button]
+        public void Ins()
+        {
+            this.item = deskPool.PopItem();
+            Debug.Log(item);
+        }
+        [Button]
+
+        void Des()
+        {
+            Destroy(item.gameObject);
+        }
+        [Button]
+
+        void Log()
+        {
+            Debug.Log(item);
+            Debug.Log(item == null);
+            Debug.Log(item.IsNull());
         }
         
     }

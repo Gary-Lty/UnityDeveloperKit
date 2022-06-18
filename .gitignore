@@ -5,3 +5,5 @@ Logs/
 .idea/
 Packages/
 obj/
+*.csproj
+ProjectSettings/RiderScriptEditorPersistedState.asset
