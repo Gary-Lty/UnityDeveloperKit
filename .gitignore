@@ -7,3 +7,4 @@ Packages/
 obj/
 *.csproj
 ProjectSettings/RiderScriptEditorPersistedState.asset
+*.sln
