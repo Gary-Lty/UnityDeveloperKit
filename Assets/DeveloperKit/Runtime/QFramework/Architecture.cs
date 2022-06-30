@@ -153,17 +153,17 @@ namespace QFramework
 
         private MessageBroker mTypeEventSystem = new MessageBroker();
 
-        public void SendEvent<TEvent>() where TEvent : new()
+        public void Publish<TEvent>() where TEvent : new()
         {
             mTypeEventSystem.Publish(new TEvent());
         }
 
-        public void SendEvent<TEvent>(TEvent e)
+        public void Publish<TEvent>(TEvent e)
         {
             mTypeEventSystem.Publish<TEvent>(e);
         }
 
-        public IObservable<TEvent> RegisterEvent<TEvent>()
+        public IObservable<TEvent> ReceiveEvent<TEvent>()
         {
             return mTypeEventSystem.Receive<TEvent>();
         }

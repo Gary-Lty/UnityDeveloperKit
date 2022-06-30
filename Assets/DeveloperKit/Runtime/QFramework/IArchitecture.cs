@@ -73,20 +73,20 @@ namespace QFramework
         /// 向架构内发送事件
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        void SendEvent<T>() where T : new();
+        void Publish<T>() where T : new();
         
         /// <summary>
         /// 向架构内发送事件
         /// </summary>
         /// <param name="e"></param>
         /// <typeparam name="T"></typeparam>
-        void SendEvent<T>(T e);
+        void Publish<T>(T e);
 
         /// <summary>
         /// 在架构内注册事件
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        IObservable<T> RegisterEvent<T>();
+        IObservable<T> ReceiveEvent<T>();
     }
 }

@@ -30,7 +30,7 @@ namespace QFramework
     /// 控制层接口
     /// </summary>
     public interface IController : IBelongToArchitecture, ICanSendCommand, ICanGetSystem, ICanGetModel,
-        ICanRegisterEvent, ICanSendQuery
+        ICanReceiveEvent, ICanSendQuery
     {
     }
 
@@ -39,7 +39,7 @@ namespace QFramework
     /// 系统层接口
     /// </summary>
     public interface ISystem : IBelongToArchitecture, ICanSetArchitecture, ICanGetModel, ICanGetUtility,
-        ICanRegisterEvent, ICanSendEvent, ICanGetSystem
+        ICanReceiveEvent, ICanSendEvent, ICanGetSystem
     {
         void Init();
     }
@@ -150,15 +150,35 @@ namespace QFramework
     /// <summary>
     /// 注册事件的扩展接口
     /// </summary>
-    public interface ICanRegisterEvent : IBelongToArchitecture
+    public interface ICanReceiveEvent : IBelongToArchitecture
     {
     }
 
-    public static class CanRegisterEventExtension
+    public static class CanReceiveEventExtension
     {
-        public static IObservable<T> RegisterEvent<T>(this ICanRegisterEvent self, Action<T> onEvent)
+        public static IObservable<T> Receive<T>(this ICanReceiveEvent self)
         {
-            return self.GetArchitecture().RegisterEvent<T>();
+            return self.GetArchitecture().ReceiveEvent<T>();
+        }
+    }
+    
+    /// <summary>
+    /// 发送事件的扩展接口
+    /// </summary>
+    public interface ICanPublishEvent : IBelongToArchitecture
+    {
+    }
+
+    public static class CanPublishEventExtension
+    {
+        public static void Publish<T>(this ICanPublishEvent self, T eventData)
+        {
+            self.GetArchitecture().Publish(eventData);
+        }
+        
+        public static void Publish<T>(this ICanPublishEvent self) where  T : new()
+        {
+            self.GetArchitecture().Publish(new T());
         }
     }
 
@@ -193,12 +213,12 @@ namespace QFramework
     {
         public static void SendEvent<T>(this ICanSendEvent self) where T : new()
         {
-            self.GetArchitecture().SendEvent<T>();
+            self.GetArchitecture().Publish<T>();
         }
 
         public static void SendEvent<T>(this ICanSendEvent self, T e)
         {
-            self.GetArchitecture().SendEvent<T>(e);
+            self.GetArchitecture().Publish<T>(e);
         }
     }
 
