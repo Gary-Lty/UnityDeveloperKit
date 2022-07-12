@@ -11,6 +11,7 @@ namespace DeveloperKit.Runtime.Pool
     public class GameObjectPool : IPool<UnityEngine.GameObject>, IHasPrefabGameObject
     {
         [SerializeField] private GameObject prefab;
+        [SerializeField] private Transform prefabParent;
         private List<GameObject> content = new List<GameObject>();
         public IEnumerable<GameObject> Content => content;
         public GameObject Prefab => prefab;
@@ -23,9 +24,14 @@ namespace DeveloperKit.Runtime.Pool
                 gameObject = NewItem();
                 content.AddUnityObject(gameObject);
             }
+            
             return gameObject;
         }
 
+        /// <summary>
+        /// 回收物体，把物体压入对象池
+        /// </summary>
+        /// <param name="item"></param>
         public virtual void RecycleItem(GameObject item)
         {
             content.AddUnityObject(item);
@@ -33,7 +39,7 @@ namespace DeveloperKit.Runtime.Pool
 
         public virtual GameObject NewItem()
         {
-            return GameObject.Instantiate(prefab);
+            return GameObject.Instantiate(prefab,prefabParent);
         }
 
     }

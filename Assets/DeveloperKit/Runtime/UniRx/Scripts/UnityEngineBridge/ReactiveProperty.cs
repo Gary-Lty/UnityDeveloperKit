@@ -245,6 +245,11 @@ namespace UniRx
         {
             return false;
         }
+        
+        public static implicit operator T(ReactiveProperty<T> property)
+        {
+            return property.Value;
+        }
     }
 
     /// <summary>
