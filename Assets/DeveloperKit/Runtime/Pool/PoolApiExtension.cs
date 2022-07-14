@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityDeveloperKit.Runtime.Extension;
+using UnityEngine;
 
 namespace DeveloperKit.Runtime.Pool
 {
@@ -9,9 +10,9 @@ namespace DeveloperKit.Runtime.Pool
         /// </summary>
         /// <param name="self"></param>
         /// <typeparam name="T"></typeparam>
-        public static void Recycle<T>(this IHasCreator<T> self)
+        public static void RecycleSelf<T>(this IHasCreator<T> self)
         {
-            if (self.Creator != null)
+            if (!self.Creator.IsNull())
             {
                 self.Creator.RecycleItem((T)self);
             }

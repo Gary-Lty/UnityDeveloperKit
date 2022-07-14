@@ -54,7 +54,7 @@ namespace DeveloperKit.Runtime.Pool
     /// 对象池回收物体的接口
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public interface ICanRecycleItem<in T>
+    public interface ICanRecycleItem<in T>: IObject
     {
         /// <summary>
         /// 回收物体
@@ -63,16 +63,30 @@ namespace DeveloperKit.Runtime.Pool
         void RecycleItem(T item);
     }
 
-    /// <summary>
-    /// 对象池物体的接口
-    /// </summary>
-    public interface ICanRecycle
+    public interface IHasUseOfState:IComponent
     {
         /// <summary>
         /// 是否在使用中
         /// </summary>
         bool IsInUse { get; set; }
+    }
 
+    /// <summary>
+    /// 对象池物体的接口
+    /// </summary>
+    public interface IHasPopCallback
+    {
+        /// <summary>
+        /// 弹出时的回调
+        /// </summary>
+        public void OnPop();
+    }
+
+    /// <summary>
+    /// 对象池物体的接口
+    /// </summary>
+    public interface IHasRecycleCallback
+    {
         /// <summary>
         /// 回收时的回调
         /// </summary>
