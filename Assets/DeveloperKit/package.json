@@ -2,9 +2,9 @@
   "name": "com.lty.developerkit",
   "displayName": "Unity Developer Kit",
   "description": "开发工具",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "unity": "2021.3",
-  "author": "lty",
+  "author": "Gary",
   "keywords": [
     "扩展"
   ]
