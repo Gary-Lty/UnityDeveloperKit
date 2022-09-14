@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using Sirenix.OdinInspector;
+// using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -42,7 +42,8 @@ namespace UiTools
             public string path;
         }
 
-        [TableList] public List<UiElement> ElementsList = new List<UiElement>();
+        // [TableList]
+        public List<UiElement> ElementsList = new List<UiElement>();
 
         private void TryGetComponent<T>() where T : Component
         {
@@ -80,7 +81,7 @@ namespace UiTools
             }
         }
 
-        [Button("检测组件")]
+        // [Button("检测组件")]
         void DetectComponent()
         {
             ElementsList.Clear();
@@ -97,7 +98,7 @@ namespace UiTools
         }
 
 
-        [Button("生成脚本")]
+        // [Button("生成脚本")]
         void GenerateScript()
         {
             var sb = new StringBuilder();
