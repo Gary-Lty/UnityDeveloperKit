@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Sirenix.OdinInspector;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -92,9 +91,9 @@ namespace UiTools
             if(scrollRect) TryGetComponent<ScrollRect>();
             if(slider) TryGetComponent<Slider>();
             TryGetComponent<Mask>();
-            TryGetComponent<TextMeshProUGUI>();
-            TryGetComponent<TMP_InputField>();
-            TryGetComponent<TMP_Dropdown>();
+            // TryGetComponent<TextMeshProUGUI>();
+            // TryGetComponent<TMP_InputField>();
+            // TryGetComponent<TMP_Dropdown>();
         }
 
 
