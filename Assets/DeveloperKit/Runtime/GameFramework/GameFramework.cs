@@ -35,7 +35,6 @@ namespace DeveloperKit.Runtime.GameFramework
         }
 
         public abstract void Init();
-        public abstract IFramework GetFramework();
 
         public void SendCommand<T1>(T1 command) where  T1 : ICommand
         {

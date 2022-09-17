@@ -7,11 +7,6 @@ namespace lty
         public override void Init()
         {
         }
-
-        public override IFramework GetFramework()
-        {
-            return AirFrame.Interface;
-        }
     }
 }
 
