@@ -18,7 +18,14 @@ namespace DeveloperKit.Runtime.Pool
 
         public  virtual GameObject PopItem()
         {
-            var gameObject = content.Find(e=> !e.activeInHierarchy);
+            var gameObject = content.Find(e=>             {
+                if (!e)
+                {
+                    Debug.LogError("对象池物体已被删除，丢失引用！");
+                    return false;
+                }
+                return !e.activeInHierarchy;
+            });
             if (!gameObject)
             {
                 gameObject = NewItem();
