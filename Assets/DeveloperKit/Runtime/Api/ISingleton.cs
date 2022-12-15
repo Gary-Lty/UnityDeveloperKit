@@ -6,11 +6,6 @@ namespace UnityDeveloperKit.Runtime.Api
     /// <typeparam name="T"></typeparam>
     public interface ISingleton<T>
     {
-        public static ISingleton<T> Singleton { get; private set; }
-
-        public sealed void Init()
-        {
-            Singleton = this;
-        }
+        ISingleton<T> Singleton { get; }
     }
 }

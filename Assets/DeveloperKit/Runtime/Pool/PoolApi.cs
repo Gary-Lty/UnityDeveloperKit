@@ -10,17 +10,17 @@ namespace DeveloperKit.Runtime.Pool
 
     public interface IHasContent<out T>
     {
-        public IEnumerable<T> Content { get; }
+        IEnumerable<T> Content { get; }
     }
 
     public interface IHasPrefab<out T>
     {
-        public T Prefab { get; }
+        T Prefab { get; }
     }
     
     public interface IHasPrefabGameObject
     {
-        public GameObject Prefab { get; }
+        GameObject Prefab { get; }
     }
 
 
@@ -79,7 +79,7 @@ namespace DeveloperKit.Runtime.Pool
         /// <summary>
         /// 弹出时的回调
         /// </summary>
-        public void OnPop();
+        void OnPop();
     }
 
     /// <summary>
@@ -90,7 +90,7 @@ namespace DeveloperKit.Runtime.Pool
         /// <summary>
         /// 回收时的回调
         /// </summary>
-        public void OnRecycle();
+        void OnRecycle();
     }
 
     /// <summary>
@@ -102,6 +102,6 @@ namespace DeveloperKit.Runtime.Pool
         /// <summary>
         /// 实例化此物体的对象池
         /// </summary>
-        public ICanRecycleItem<T> Creator { get; set; }
+        ICanRecycleItem<T> Creator { get; set; }
     }
 }

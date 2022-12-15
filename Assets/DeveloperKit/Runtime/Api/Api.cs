@@ -14,7 +14,7 @@ namespace UnityDeveloperKit.Runtime.Api
     /// </summary>
     public interface IHasTransform : IObject
     {
-        public Transform transform { get; }
+        Transform transform { get; }
     }
 
     /// <summary>
@@ -22,7 +22,7 @@ namespace UnityDeveloperKit.Runtime.Api
     /// </summary>
     public interface IHasGameObject : IObject
     {
-        public GameObject gameObject { get; }
+        GameObject gameObject { get; }
     }
 
     /// <summary>

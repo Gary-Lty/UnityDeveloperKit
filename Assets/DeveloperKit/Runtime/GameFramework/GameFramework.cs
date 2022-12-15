@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using UniRx;
 
 namespace DeveloperKit.Runtime.GameFramework
 {
@@ -11,9 +10,6 @@ namespace DeveloperKit.Runtime.GameFramework
 
         private System.Collections.Generic.Dictionary<Type, IDataModel>
             _dateModels = new Dictionary<Type, IDataModel>();
-
-        public MessageBroker eventHandler = new MessageBroker();
-
         
         public static T Interface
         {
@@ -42,15 +38,6 @@ namespace DeveloperKit.Runtime.GameFramework
             command.Execute();
         }
 
-        public void SendEvent<T1>(T1 evt)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public IObservable<T1> ReceiveEvent<T1>()
-        {
-            return eventHandler.Receive<T1>();
-        }
 
         public void BindDataModel<T1>(T1 model) where T1 : IDataModel
         {

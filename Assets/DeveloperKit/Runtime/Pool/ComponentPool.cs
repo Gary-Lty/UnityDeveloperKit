@@ -19,6 +19,8 @@ namespace DeveloperKit.Runtime.Pool
         
         public GameObject Prefab => prefab;
 
+        public Transform parent;
+
         public virtual T PopItem()
         {
             var component = content.Find(e => !e.IsInUse);
@@ -48,7 +50,7 @@ namespace DeveloperKit.Runtime.Pool
 
         public virtual T NewItem()
         {
-            var t = Object.Instantiate(Prefab).GetComponent<T>();
+            var t = Object.Instantiate(Prefab,parent).GetComponent<T>();
             if (t is IHasCreator<T> hasCreator)
             {
                 hasCreator.Creator = this;
