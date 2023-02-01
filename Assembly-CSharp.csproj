@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{f2d7e509-2b9d-59cd-25cd-a875f935c1fb}</ProjectGuid>
+    <ProjectGuid>{486881b9-59be-ce07-3d03-b36eef2d239d}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -49,7 +49,7 @@
      <Compile Include="Assets\CurveInterpolations\Scripts\SplineCurve.cs" />
      <None Include="Assets\GameFramework\Libraries\link.xml" />
      <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
-     <None Include="Assets\DeveloperKit\package.json" />
+     <None Include="Assets\UnityDeveloperKit\package.json" />
      <None Include="Assets\GameFramework\package.json" />
      <Reference Include="UnityEngine">
      <HintPath>D:\UnityEditor\2021.3.2f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -295,37 +295,37 @@
      <HintPath>D:\UnityEditor\2021.3.2f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Utilities.Editor">
-     <HintPath>F:\UnityProject\My Kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
      </Reference>
      <Reference Include="GameFramework">
-     <HintPath>F:\UnityProject\My Kit\Assets\GameFramework\Libraries\GameFramework.dll</HintPath>
+     <HintPath>E:\lty\kit\Assets\GameFramework\Libraries\GameFramework.dll</HintPath>
      </Reference>
      <Reference Include="ICSharpCode.SharpZipLib">
-     <HintPath>F:\UnityProject\My Kit\Assets\GameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
+     <HintPath>E:\lty\kit\Assets\GameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.OdinInspector.Editor">
-     <HintPath>F:\UnityProject\My Kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.OdinInspector.Attributes">
-     <HintPath>F:\UnityProject\My Kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+     <HintPath>E:\lty\kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Serialization.Config">
-     <HintPath>F:\UnityProject\My Kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+     <HintPath>E:\lty\kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Utilities">
-     <HintPath>F:\UnityProject\My Kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+     <HintPath>E:\lty\kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>F:\UnityProject\My Kit\Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>F:\UnityProject\My Kit\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
-     <HintPath>F:\UnityProject\My Kit\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Serialization">
-     <HintPath>F:\UnityProject\My Kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+     <HintPath>E:\lty\kit\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Android.Types">
      <HintPath>D:\UnityEditor\2021.3.2f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -700,112 +700,104 @@
      <HintPath>D:\UnityEditor\2021.3.2f1c1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Analytics">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Environments">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>F:\UnityProject\My Kit\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>E:\lty\kit\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
-      <Project>{bf698d49-8d48-1458-50df-268688cb08d5}</Project>
+      <Project>{c9c14437-e6d4-0646-dd85-9a54c239ee85}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityGameFramework.Editor.csproj">
-      <Project>{d5d0e6a4-81e5-b0b1-ea0b-98edf7253914}</Project>
+      <Project>{c6681586-3999-eda9-29e7-9a97791b35eb}</Project>
       <Name>UnityGameFramework.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
-      <Project>{347893ac-3bae-343a-94a4-2f7153e563f7}</Project>
+      <Project>{e98ac6ba-2712-e7df-f9bc-49d49cd965e4}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="lty.csproj">
-      <Project>{5e386b23-f269-12c1-a22e-6f9915f8cfc3}</Project>
-      <Name>lty</Name>
+    <ProjectReference Include="UnityGameFramework.Runtime.csproj">
+      <Project>{d134aca0-c18b-4b0d-d3c2-f4aa15151c13}</Project>
+      <Name>UnityGameFramework.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="com.ALTY.UnityDeveloperKit.csproj">
-      <Project>{e5eef221-786f-381d-d9dc-2d331fcae066}</Project>
+      <Project>{1fb8028e-6bbc-3c77-6905-54f4e51da52f}</Project>
       <Name>com.ALTY.UnityDeveloperKit</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniRx.csproj">
-      <Project>{953596bc-5893-dea7-2326-9cf6f9843b8e}</Project>
-      <Name>UniRx</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityGameFramework.Runtime.csproj">
-      <Project>{212312f2-8d5f-9d81-c80b-382093d8ac42}</Project>
-      <Name>UnityGameFramework.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
